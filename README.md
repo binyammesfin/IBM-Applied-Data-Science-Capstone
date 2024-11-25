@@ -8,22 +8,21 @@ This project analyzes SpaceX Falcon 9 rocket launches to uncover key factors tha
 
 # Methodology
 1. Data Collection:
+* Utilized the SpaceX REST API and web scraping techniques to retrieve comprehensive launch data.
+* Processed raw data into structured formats for analysis, addressing missing values and focusing on Falcon 9 launches.
 
-Utilized the SpaceX REST API and web scraping techniques to retrieve comprehensive launch data.
-Processed raw data into structured formats for analysis, addressing missing values and focusing on Falcon 9 launches.
-Data Wrangling and Preparation:
+2. Data Wrangling and Preparation:
+* Cleaned and transformed data by implementing one-hot encoding and converting categorical data into numerical formats.
+* Added a binary target variable to represent landing success (1) or failure (0).
 
-Cleaned and transformed data by implementing one-hot encoding and converting categorical data into numerical formats.
-Added a binary target variable to represent landing success (1) or failure (0).
-Exploratory Data Analysis (EDA):
+3. Exploratory Data Analysis (EDA):
+* Conducted in-depth analysis using SQL, data visualization tools, and interactive geographic maps (e.g., Folium).
+* Examined correlations between payload mass, flight numbers, orbit types, and launch outcomes.
 
-Conducted in-depth analysis using SQL, data visualization tools, and interactive geographic maps (e.g., Folium).
-Examined correlations between payload mass, flight numbers, orbit types, and launch outcomes.
-Predictive Modeling:
+4. Predictive Modeling:
+* Built and evaluated multiple classification models, including Logistic Regression, SVM, Decision Trees, and K-Nearest Neighbors.
+* Used GridSearchCV for hyperparameter tuning and evaluated models with metrics such as accuracy, Jaccard Score, and F1 Score.
+* Determined that the SVM model achieved the best performance across all metrics.
 
-Built and evaluated multiple classification models, including Logistic Regression, SVM, Decision Trees, and K-Nearest Neighbors.
-Used GridSearchCV for hyperparameter tuning and evaluated models with metrics such as accuracy, Jaccard Score, and F1 Score.
-Determined that the SVM model achieved the best performance across all metrics.
-Data Visualization:
-
-Visualized results through interactive dashboards created with Plotly Dash, including features like dropdowns, sliders, and scatter plots.
+5. Data Visualization:
+* Visualized results through interactive dashboards created with Plotly Dash, including features like dropdowns, sliders, and scatter plots.
